@@ -1,10 +1,8 @@
 # Sort
-[Foo](##Bubble-sort)
-
 + [Bubble sort](#Bubble-sort)
-+ Selection sort
-+ Insertion sort
-+ Merge sort
++ [Selection sort](#Selection-sort)
++ [Insertion sort](#Insertion-sort)
++ [Merge sort](#Merge-sort)
 
 ## Bubble sort
 <p align="center">
