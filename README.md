@@ -1,7 +1,7 @@
 # Sort
 [Foo](##Bubble-sort)
 
-+ Bubble sort
++ [Bubble sort](##Bubble-sort)
 + Selection sort
 + Insertion sort
 + Merge sort
