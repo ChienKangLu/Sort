@@ -28,6 +28,9 @@
   <img width="600" src="https://github.com/ChienKangLu/Sort/blob/master/sort/readme/merge.png" />
 </p>
 
+## Reference
+[visualgo](https://visualgo.net/en/sorting)
+
 
 
 
