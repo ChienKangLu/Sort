@@ -3,6 +3,7 @@ package test;
 import sort.BubbleSort;
 import sort.InsertionSort;
 import sort.MergeSort;
+import sort.QuickSort;
 import sort.SelectionSort;
 import sort.Sort;
 
@@ -10,7 +11,7 @@ public class Test {
 	public static int[] createDatas(int size) {
 		int datas[]=new int[size];
 		for(int i=0;i<datas.length;i++) {
-			datas[i] = (int)(Math.random()*10);
+			datas[i] = (int)(Math.random()*100);
 		}
 		return datas;
 	}
@@ -20,23 +21,28 @@ public class Test {
 		}
 		System.out.println();
 	}
+	public static double run(Sort sort) {
+		int N = 1000;
+		int [] datas = createDatas(N);
+		sort.setDatas(datas);
+		long start = System.currentTimeMillis();
+		sort.sort();
+		long end = System.currentTimeMillis();
+		return end - start;
+	}
 	public static double monteCarloSimulation(Sort sort) {
-		double T = 100;
-		int N = 5000;
+		double T = 10000;
 		double avg = 0;
 		for(int i = 0 ;i<T;i++) {
-			int [] datas = createDatas(N);
-			sort.setDatas(datas);
-			long start = System.currentTimeMillis();
-			sort.sort();
-			long end = System.currentTimeMillis();
-			avg += (end - start);
+			double duration = run(sort);
+			avg += duration;
 		}
 		return avg/T;
 	}
 	public static void RunSort(Sort sort) {
+		System.out.printf("%15s: ",sort);
 		double avg = monteCarloSimulation(sort);
-		System.out.printf("%15s: %5.2f ms\n",sort,avg);
+		System.out.printf("%5.2f ms\n",avg);
 	}
 	public static void main(String[] args) {
 		BubbleSort bubbleSort = new BubbleSort();
@@ -50,6 +56,11 @@ public class Test {
 
 		MergeSort mergeSort = new MergeSort();
 		RunSort(mergeSort);
+		
+		QuickSort quickSort = new QuickSort();
+		RunSort(quickSort);
+		
+		
 		
 	}
 

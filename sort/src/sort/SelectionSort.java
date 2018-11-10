@@ -19,7 +19,7 @@ public class SelectionSort extends Sort {
 					index = j;
 				}
 			}
-			swap(index, i);
+			swap(datas,index, i);
 		}
 	}
 

@@ -7,7 +7,7 @@ public abstract class Sort {
 	public Sort(int[] datas) {
 		this.datas = datas;
 	}
-	void swap(int a,int b) {
+	void swap(int[] datas,int a,int b) {
 		int temp = datas[a];
 		datas[a] = datas[b];
 		datas[b] = temp;
