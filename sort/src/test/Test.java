@@ -24,21 +24,21 @@ public class Test {
 	}
 	public static double run(Sort sort) {
 		int N = 1000;
-		N = 10;
 		int [] datas = createDatas(N);
 		sort.setDatas(datas);
 		long start = System.currentTimeMillis();
 		sort.sort();
 		long end = System.currentTimeMillis();
-		display(datas);
 		return end - start;
 	}
 	public static double monteCarloSimulation(Sort sort) {
-		double T = 20000;
+		double T = 10000;
 		double avg = 0;
 		for(int i = 0 ;i<T;i++) {
 			double duration = run(sort);
 			avg += duration;
+			if(i% ((int)T/5) == 0)
+				System.out.printf("%s","*");
 		}
 		return avg/T;
 	}
@@ -64,10 +64,7 @@ public class Test {
 		RunSort(quickSort);
 		
 		RandomQuickSort randomQuickSort = new RandomQuickSort();
-		run(randomQuickSort);
 		RunSort(randomQuickSort);
-		
-		
 		
 	}
 
