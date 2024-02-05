@@ -1,12 +1,8 @@
 package com.leo.sort;
 
 public class InsertionSort extends Sort {
-    public InsertionSort(int[] data) {
-        super(data);
-    }
-
     @Override
-    public void sort() {
+    public void sort(int[] data) {
         for (int i = 1; i < data.length; i++) {
             int unsorted = data[i];
             int insert = i;

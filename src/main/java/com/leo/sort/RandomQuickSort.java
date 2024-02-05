@@ -1,12 +1,8 @@
 package com.leo.sort;
 
 public class RandomQuickSort extends Sort {
-    public RandomQuickSort(int[] data) {
-        super(data);
-    }
-
     @Override
-    public void sort() {
+    public void sort(int[] data) {
         split(data, 0, data.length - 1);
     }
 

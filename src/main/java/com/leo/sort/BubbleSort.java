@@ -1,12 +1,8 @@
 package com.leo.sort;
 
 public class BubbleSort extends Sort {
-    public BubbleSort(int[] data) {
-        super(data);
-    }
-
     @Override
-    public void sort() {
+    public void sort(int[] data) {
         while (true) {
             boolean flag = false;
             for (int i = 1; i < data.length; i++) {
