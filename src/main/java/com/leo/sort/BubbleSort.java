@@ -3,15 +3,17 @@ package com.leo.sort;
 public class BubbleSort extends Sort {
     @Override
     public void sort(int[] data) {
-        while (true) {
-            boolean flag = false;
-            for (int i = 1; i < data.length; i++) {
-                if (data[i - 1] > data[i]) {
-                    swap(data, i - 1, i);
-                    flag = true;
+        final int length = data.length;
+        for (int i = 0; i < length - 1; i++) {
+            boolean isSwapped = false;
+            for (int j = 0; j < length - i - 1; j++) {
+                if (data[j] > data[j + 1]) {
+                    swap(data, j, j + 1);
+                    isSwapped = true;
                 }
             }
-            if (!flag) {
+
+            if (!isSwapped) {
                 break;
             }
         }
