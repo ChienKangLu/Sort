@@ -11,27 +11,27 @@
 
 ## Bubble sort
 <p align="center">
-  <img width="600" src="https://github.com/ChienKangLu/Sort/blob/master/sort/readme/bubble.png" />
+  <img width="600" src="./readme/bubble.png" />
 </p>
 
 ## Selection sort
 <p align="center">
-  <img width="200" src="https://github.com/ChienKangLu/Sort/blob/master/sort/readme/selection.png" />
+  <img width="200" src="./readme/selection.png" />
 </p>
 
 ## Insertion sort
 <p align="center">
-  <img width="200" src="https://github.com/ChienKangLu/Sort/blob/master/sort/readme/insertion.png" />
+  <img width="200" src="./readme/insertion.png" />
 </p>
 
 ## Merge sort
 <p align="center">
-  <img width="400" src="https://github.com/ChienKangLu/Sort/blob/master/sort/readme/merge.png" />
+  <img width="400" src="./readme/merge.png" />
 </p>
 
 ## Quick sort
 <p align="center">
-  <img width="800" src="https://github.com/ChienKangLu/Sort/blob/master/sort/readme/quick.png" />
+  <img width="800" src="./readme/quick.png" />
 </p>
 
 ## Reference
